@@ -13,3 +13,10 @@ Topic
 - Each partition is an append-only log
 
 - Each message has a unique offset
+
+```code
+Partition 0
+Offset 0 → message A
+Offset 1 → message B
+Offset 2 → message C
+```

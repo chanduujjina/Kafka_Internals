@@ -37,3 +37,12 @@ Broker
 - Connection reset
 
 - Producer receives exception.
+
+
+### What Happens Internally?
+
+1️⃣ Request marked as failed
+2️⃣ Metadata refreshed
+3️⃣ Batch put back into accumulator
+4️⃣ Wait retry.backoff.ms
+5️⃣ Resend

@@ -47,3 +47,33 @@ enable.idempotence=true
 - ✔ No data loss
 - ✔ No duplicate writes
 - ✔ High durability
+
+
+## What Scenarios Cause Producer-Side Lag?
+
+
+##🔹 1. Broker Overload
+
+- If broker disk is slow:
+
+- Writes are slow
+
+- Producer waits
+
+- Latency increases
+
+
+```code
+acks=all
+```
+
+
+## 🔹 2. Large Message Size
+
+- Big payload (e.g., 10MB):
+
+- Serialization slow
+
+- Network slow
+
+- Replication slow

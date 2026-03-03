@@ -109,3 +109,12 @@ retries=high
 
 - Producer ensures ordering & exactly-once
 - But retries can increase latency.
+
+
+### 🔹 7. Buffer Full
+
+- Producer has buffer memory:
+
+```properties
+buffer.memory=33554432
+```

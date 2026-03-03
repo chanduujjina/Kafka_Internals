@@ -118,3 +118,15 @@ retries=high
 ```properties
 buffer.memory=33554432
 ```
+
+
+🔥 Complete Safe Producer Configuration
+
+Production-safe config:
+
+```properties
+acks=all
+retries=10
+enable.idempotence=true
+max.in.flight.requests.per.connection=5
+```

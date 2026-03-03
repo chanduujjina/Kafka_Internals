@@ -83,3 +83,11 @@ acks=all
 - If replication factor = 3 and one follower is slow:
 
 - Leader waits → delay.
+
+### 🔹 4. Network Issues
+
+- Slow network between:
+
+  - Producer → Broker
+
+   - Broker → Broker (replication)

@@ -17,3 +17,11 @@ Kafka Broker
    topicA-0/
    topicA-1/
 ```
+
+### Kafka stores:
+
+- Messages
+
+- Offsets
+
+- Index files

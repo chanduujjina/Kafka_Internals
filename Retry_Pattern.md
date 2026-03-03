@@ -6,3 +6,9 @@
   - Timeout happens
   - Broker returns error
   - Producer retries automatically.
+
+```properties
+retries=3
+retry.backoff.ms=100
+delivery.timeout.ms=120000
+```

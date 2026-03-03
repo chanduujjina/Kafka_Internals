@@ -64,3 +64,19 @@ Kafka Broker
 - Rebalancing
 
 - Offset tracking
+
+
+### 2️⃣ Role of Kafka Broker vs Bootstrap Server
+### 🔵 Kafka Broker Role
+
+- Stores data (topics & partitions)
+
+- Handles read/write
+
+- Manages replication
+
+- Ensures durability
+
+- Serves metadata
+
+- It is the actual data server.

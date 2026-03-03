@@ -26,3 +26,14 @@ NetworkClient
      ↓
 Broker
 ```
+
+
+### Case 1: Broker Temporarily Unavailable
+
+- Network error
+
+- Leader changed
+
+- Connection reset
+
+- Producer receives exception.

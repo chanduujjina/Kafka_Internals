@@ -120,7 +120,7 @@ buffer.memory=33554432
 ```
 
 
-🔥 Complete Safe Producer Configuration
+### 🔥 Complete Safe Producer Configuration
 
 Production-safe config:
 
@@ -130,3 +130,9 @@ retries=10
 enable.idempotence=true
 max.in.flight.requests.per.connection=5
 ```
+
+- This gives:
+
+ - ✔ No data loss
+ - ✔ No duplicates
+ - ✔ Automatic leader failover handling

@@ -37,3 +37,13 @@ acks=all
 - Success means:
 ✔ Leader stored message
 ✔ All in-sync replicas stored message
+
+
+```code
+acks=all
+retries=3
+enable.idempotence=true
+```
+- ✔ No data loss
+- ✔ No duplicate writes
+- ✔ High durability

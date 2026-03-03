@@ -91,3 +91,20 @@ Producer → Connect to bootstrap server
 Bootstrap → Returns metadata (all brokers, leaders)
 Producer → Connects to actual leader broker
 ```
+
+
+### End-to-End Flow (Visual)
+
+```code
+Producer
+   ↓
+Bootstrap Broker
+   ↓ (metadata)
+Leader Broker (Partition 0)
+   ↓
+Followers replicate
+   ↓
+Consumer fetches from Leader
+
+```
+

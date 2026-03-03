@@ -1,5 +1,5 @@
 ## Each broker contains:
-
+```Code
 Kafka Broker
  ├── Topic Partitions (stored on disk)
  ├── Replica Manager
@@ -8,3 +8,4 @@ Kafka Broker
  ├── Controller (if elected)
  ├── Group Coordinator
  └── Request Handler Threads
+```

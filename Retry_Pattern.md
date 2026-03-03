@@ -28,7 +28,7 @@ Broker
 ```
 
 
-### Case 1: Broker Temporarily Unavailable
+## Case 1: Broker Temporarily Unavailable
 
 - Network error
 
@@ -46,3 +46,28 @@ Broker
 - 3️⃣ Batch put back into accumulator
 - 4️⃣ Wait retry.backoff.ms
 - 5️⃣ Resend
+
+
+### Not All Errors Are Retriable
+
+#### Kafka categorizes errors:
+
+- Retriable Errors:
+  - LeaderNotAvailable
+
+  - NotLeaderForPartition
+  - NetworkException
+
+  - RequestTimeoutException
+
+- Producer retries.
+
+- Non-Retriable Errors:
+
+   - RecordTooLargeException
+
+   - AuthorizationException
+
+   - InvalidTopicException
+
+- Producer fails immediately.

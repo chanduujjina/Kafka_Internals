@@ -52,7 +52,7 @@ enable.idempotence=true
 ## What Scenarios Cause Producer-Side Lag?
 
 
-##🔹 1. Broker Overload
+### 🔹 1. Broker Overload
 
 - If broker disk is slow:
 
@@ -68,7 +68,7 @@ acks=all
 ```
 
 
-## 🔹 2. Large Message Size
+###  🔹 2. Large Message Size
 
 - Big payload (e.g., 10MB):
 
@@ -77,3 +77,9 @@ acks=all
 - Network slow
 
 - Replication slow
+
+### 🔹 3. High Replication Factor
+
+- If replication factor = 3 and one follower is slow:
+
+- Leader waits → delay.

@@ -28,3 +28,12 @@ acks=all
 - Success means:
 ✔ Leader stored message
 ❌ Followers may not have replicated yet
+
+
+### 🔹 acks=all (or -1)
+
+- Leader waits for all ISR replicas to confirm
+
+- Success means:
+✔ Leader stored message
+✔ All in-sync replicas stored message

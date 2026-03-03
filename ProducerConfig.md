@@ -91,3 +91,21 @@ acks=all
   - Producer → Broker
 
    - Broker → Broker (replication)
+
+### 🔹 5. Too Many Partitions
+
+- If topic has 200 partitions:
+
+- Metadata updates heavy
+
+- Thread context switching high
+
+
+### 🔹 6. Idempotence + Retries
+```code
+enable.idempotence=true
+retries=high
+```
+
+- Producer ensures ordering & exactly-once
+- But retries can increase latency.

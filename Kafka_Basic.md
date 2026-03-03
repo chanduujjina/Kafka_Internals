@@ -80,3 +80,14 @@ Kafka Broker
 - Serves metadata
 
 - It is the actual data server.
+
+### 🟢 Bootstrap Server Role
+
+- It only helps client discover cluster metadata.
+
+#### Flow:
+```code
+Producer → Connect to bootstrap server
+Bootstrap → Returns metadata (all brokers, leaders)
+Producer → Connects to actual leader broker
+```

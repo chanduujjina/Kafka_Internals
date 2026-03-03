@@ -25,3 +25,42 @@ Kafka Broker
 - Offsets
 
 - Index files
+
+### 🔹 2. Replica Manager  Handles:
+
+- Leader/Follower replication
+
+- ISR (In-Sync Replicas)
+
+- Replication between brokers
+
+
+### 🔹 3. Network Layer Handles:
+
+- Producer requests
+
+- Consumer fetch requests
+
+- Metadata requests
+
+- Uses TCP-based protocol.
+
+### 🔹 4. Controller (One per Cluster)
+
+- One broker becomes Controller.
+
+#### Controller handles:
+
+- Leader election
+
+- Partition reassignment
+
+- Broker failure detection
+
+### 🔹 5. Group Coordinator Manages:
+
+- Consumer groups
+
+- Rebalancing
+
+- Offset tracking
